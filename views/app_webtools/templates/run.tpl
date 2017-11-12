@@ -65,7 +65,7 @@
                     <td><textarea name="stdout" readonly>{{ VALUES['STDOUT'] }}</textarea></td>
                 </tr>
                 <tr>
-                    <th>Command error</th>
+                    <th>Command errors</th>
                     <td><textarea name="stderr" readonly>{{ VALUES['STDERR'] }}</textarea></td>
                 </tr>
             </tbody>
