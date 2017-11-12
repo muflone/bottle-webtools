@@ -33,9 +33,9 @@
             % end
                         </select></td>
         % elif type(PARAMETERS[PARAM_NAME]) is str:
-                        <td><input type="text" name="{{ PARAM_NAME }}" value="{{ ARGS[PARAM_NAME] }}"></td>
+                        <td><input type="text" name="{{ PARAM_NAME }}" value="{{ ARGS[PARAM_NAME] if ARGS[PARAM_NAME] is not None else '' }}"></td>
         % elif type(PARAMETERS[PARAM_NAME]) is date:
-                        <td><input type="text" name="{{ PARAM_NAME }}" value="{{ ARGS[PARAM_NAME] }}" id="{{ PARAM_NAME.replace(' ', '_') }}"></td>
+                        <td><input type="text" name="{{ PARAM_NAME }}" value="{{ ARGS[PARAM_NAME] if ARGS[PARAM_NAME] is not None else '' }}" id="{{ PARAM_NAME.replace(' ', '_') }}"></td>
                         <script>
                             $( "#{{ PARAM_NAME.replace(' ', '_') }}" ).datepicker({
                                 dateFormat: "yy-mm-dd",
