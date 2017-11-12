@@ -18,7 +18,7 @@ from optparse_type_flag import OptParseTypeFlag
 # Insert additional modules to the search path
 os.chdir(PATH_ROOT)
 if os.path.exists(DIR_MODULES):
-  sys.path.insert(1, DIR_MODULES)
+    sys.path.insert(1, DIR_MODULES)
 
 # Import additional modules
 import bottle
