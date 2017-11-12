@@ -1,0 +1,40 @@
+table#command_result,
+theader#command_result
+{
+    border: 2px solid black;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table#command_result tbody td,
+table#command_result tbody th
+{
+    padding: 2px 5px ;
+    border: 1px solid black;
+    text-align: left;
+}
+
+table#command_result tbody th
+{
+    width: 200px;
+}
+
+table#command_result caption
+{
+    white-space: nowrap;
+    background: #4f81bd;
+    color: #ffffff;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+table#command_result textarea
+{
+    width: 900px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    disabled: disabled;
+    height: 250px;
+}
