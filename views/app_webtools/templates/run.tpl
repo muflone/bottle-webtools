@@ -62,11 +62,11 @@
             <tbody>
                 <tr>
                     <th>Command output</th>
-                    <td><textarea name="stdout" readonly>{{ VALUES['STDOUT'] }}</textarea></td>
+                    <td><textarea name="stdout" readonly>{{ VALUES['STDOUT'].decode('utf-8', 'replace') }}</textarea></td>
                 </tr>
                 <tr>
                     <th>Command errors</th>
-                    <td><textarea name="stderr" readonly>{{ VALUES['STDERR'] }}</textarea></td>
+                    <td><textarea name="stderr" readonly>{{ VALUES['STDERR'].decode('utf-8', 'replace') }}</textarea></td>
                 </tr>
             </tbody>
         </table>
